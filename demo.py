@@ -2,9 +2,9 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 # 1. 設定網頁標題
-st.title(&#39; 我的第一個 Streamlit App&#39;)
+st.title('我的第一個 Streamlit App')
 # 2. 顯示一段文字
-st.write(&#39;恭喜你！你已經成功架設了你的第一個網頁應用程式。&#39;)
+st.write('恭喜你！你已經成功架設了你的第一個網頁應用程式。')
 # 3. 互動元件：輸入名字
 user_name = st.text_input(&quot;請輸入你的名字&quot;, &quot;訪客&quot;)
 if user_name:
@@ -13,7 +13,7 @@ st.success(f"哈囉, {user_name}歡迎來到 Streamlit 的世界。")
 st.subheader(&#39;�� 簡單的數據展示&#39;)
 chart_data = pd.DataFrame(
 np.random.randn(20, 3),
-columns=[&#39;A&#39;, &#39;B&#39;, &#39;C&#39;]
+columns=['A','B','C']
 )
 # 直接繪製折線圖
 st.line_chart(chart_data)
