@@ -10,7 +10,7 @@ user_name = st.text_input(&quot;請輸入你的名字&quot;, &quot;訪客&quot;)
 if user_name:
 st.success(f"哈囉, {user_name}歡迎來到 Streamlit 的世界。")
 # 4. 數據視覺化：隨機產生數據並畫圖
-st.subheader(&#39;�� 簡單的數據展示&#39;)
+st.subheader(' 簡單的數據展示')
 chart_data = pd.DataFrame(
 np.random.randn(20, 3),
 columns=['A','B','C']
@@ -19,6 +19,6 @@ columns=['A','B','C']
 st.line_chart(chart_data)
 # 5. 側邊欄範例
 with st.sidebar:
-st.header(&quot;側邊欄設定&quot;)
-st.write(&quot;這裡可以放參數設定或導覽列。&quot;)
-st.button(&quot;沒用的按鈕&quot;)
+st.header("側邊欄設定")
+st.write("這裡可以放參數設定或導覽列。")
+st.button("沒用的按鈕")
