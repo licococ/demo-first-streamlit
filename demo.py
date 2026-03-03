@@ -6,7 +6,7 @@ st.title('我的第一個 Streamlit App')
 # 2. 顯示一段文字
 st.write('恭喜你！你已經成功架設了你的第一個網頁應用程式。')
 # 3. 互動元件：輸入名字
-user_name = st.text_input(&quot;請輸入你的名字&quot;, &quot;訪客&quot;)
+user_name = st.text_input("請輸入你的名字", "訪客")
 if user_name:
 st.success(f"哈囉, {user_name}歡迎來到 Streamlit 的世界。")
 # 4. 數據視覺化：隨機產生數據並畫圖
